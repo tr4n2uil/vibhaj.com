@@ -1,0 +1,108 @@
+extends layout
+
+block php
+	:php
+		$breadcrumbs = array();
+		$page = 'about';
+		$menu = array(
+			'home' => '',
+			'labs' => 'labs/',
+			'hire' => 'hire/',
+			'about' => 'about/',
+		);
+
+block title
+	title #{page} &mdash; vibhaj rajan
+
+block content
+	div.body
+		div.wrap
+			div(style="padding: 1em 0 0;")
+				blockquote(style="font-size: 1.2em; font-style: italic; color: steelblue;") Be there for someone not in a position to be there for you.
+					small= "And then don't tell anyone about it, and don't ask for anything in return."
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") story
+				p 
+					span I was born in small town in Kannur, Kerala and bought up in Nerul, Navi Mumbai.
+					br
+					span I love my small family (father, mother and a little sister).
+					br
+					br
+
+					span Beginning from reading Tinkle comics which my father bought for me, I always love little things in life which are orthogonal to "race to be the best" norm in the society.
+					br
+					br
+
+					span And I deeply love the inner voice that guides me wherever I am confronted with confusion or otherwise. And amazingly, I feel the reciprocation of that in different people at different times in different phases of my life.
+					br
+					br
+
+					span After securing 90+ in my Xth and XIIth, I was fortunate to qualilfy IIT JEE 2008 with an AIR of 2984 and get into IIT (BHU) Varanasi for M. Tech. (IDD) course in Computer Science & Engineering.
+					br
+					br
+
+					span Getting a laptop towards the end of first year, I loved to study technologies that make computers work and do wonderful things. In the second year, our team was selected for interview in IBM TGMC contest.
+					br
+					br
+
+					span In my third year, I started with concentrating on web technology stack after working for Codefest Server Team. The year ended with a big surprise of getting selected for GSoC and thus started my entry into the fascinating world of open source.
+					br
+					br
+
+					span Since then, I have been regularly dedicating myself to create open technologies that will one day help me in making the dreams of many people come true. Positions of responsibility which I held thereon included Co-ordinator for Adhyayan 2012 and the Training &amp; Placement Representative for CSE 2013 batch.
+					br
+					br
+
+					span The final year gifted me an internship opportunity at Yahoo! and then it saw me taking a jump into the world of entrepreneurship with Orbitnote. Learning from failures and successes, the journey now continues ...
+					br
+
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") employment
+				p 
+					span Where I have worked
+					br
+					ul
+						li Orbitnote
+							ul.small
+								li Technical Lead Engineering, Aug - Dec 2013
+						li Yahoo!
+							ul.small
+								li Software Engineering Intern, Jan - Jul 2013
+						li Google (GSoC)
+							ul.small
+								li Student Developer, May - Aug 2011
+						li Kaarya
+							ul.small
+								li Software Developer Intern, May - Jul 2011
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") education
+				p 
+					span My alma mater
+					br
+					ul
+						li IIT (BHU) Varanasi
+							ul.small
+								li M. Tech. (IDD) Computer Science &amp; Engineering (CGPA 8.21/10)
+						li Fr. Agnel Jr. College, Vashi, Navi Mumbai
+							ul.small
+								li HSC XIIth (Maharashtra State 93.83%)
+						li "St. Augustine's High School, Nerul, Navi Mumbai"
+							ul.small
+								li SSC Xth (Maharashtra State 91.60%)
+
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") family
+				p 
+					span.small father
+					span Shri. Rajan
+					br
+					span.small mother 
+					span Smt. Prabha Rajan
+					br
+					span.small sister
+					span Vrinda Rajan
+						

@@ -1,0 +1,21 @@
+div.header
+	div(style="font-variant: small-caps; font-size: 0.9em; font-weight: bold; background-color: #efefef; border-bottom: solid 1px #ccc; padding: 0.3em 0;")
+		div.body
+			div.wrap
+				span vibhaj rajan
+
+	div.body(style="font-size: 3em;")
+		div.wrap
+			span #{page}
+			span.pull-right
+				img(src="#{app}ui/image/photo.jpg", style="height: 1em; margin-bottom: 0.35em;")
+			span.clear
+
+	div(style="font-size: 1.2em; color: #999;")
+		div.body
+			div.wrap
+				ul.list-inline
+					-foreach( $menu as $name => $link )
+						-$class = ( $name == $page ? 'bold': '' );
+						li(style="padding-right: 1em;"): a(href="#{app}#{link}", class=class) #{name}
+

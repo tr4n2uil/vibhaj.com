@@ -1,0 +1,25 @@
+:php
+	$app = APP;
+
+block php
+
+doctype 5
+html
+	head
+		block title
+
+		link(rel='shortcut icon', href='#{app}ui/image/photo.jpg')
+		
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css')
+		link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700')
+		link(rel='stylesheet', href='#{app}ui/style/style.css')
+
+		script(type='text/javascript', src='//code.jquery.com/jquery-1.10.2.min.js')
+		script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
+		script(type='text/javascript', src='#{app}ui/frontend.js/frontend.js')
+		script(type='text/javascript', src='#{app}ui/script/script.js')
+	body
+		include header
+		div(style="margin: 10em 0 5em;")
+			block content
+		include footer

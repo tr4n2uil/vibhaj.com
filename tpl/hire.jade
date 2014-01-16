@@ -1,0 +1,116 @@
+extends layout
+
+block php
+	:php
+		$breadcrumbs = array();
+		$page = 'hire';
+		$menu = array(
+			'home' => '',
+			'labs' => 'labs/',
+			'hire' => 'hire/',
+			'about' => 'about/',
+		);
+
+block title
+	title #{page} &mdash; vibhaj rajan
+
+block content
+	div.body
+		div.wrap
+			div(style="padding: 1em 0 0;")
+				blockquote(style="font-size: 1.2em; font-style: italic; color: steelblue;") Jump. You will know the rest on the way.
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") consulting
+				p 
+					span I am a available for part-time contract web development
+					br
+					ul
+						li backend
+							ul
+								li Python / Django
+								li PHP / MySQL
+								li Node.js / MongoDB / Redis
+								li Java / JavaEE
+						li frontend
+							ul
+								li JavaScript / jQuery
+								li HTML5 / CSS3 / Bootstrap
+						li software solutions
+							ul
+								li C / C++
+								li Linux / Shell
+						li open source development
+
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") portfolio
+				p 
+					span Let me show you some of what I have done
+					br
+					ul
+						li 
+							a(href="http://one-last.com/", target="_blank") one-last
+							ul.small
+								li A place to stay updated with one last post whom you follow
+								li Fully jQuery powered web app, no backend at all
+						li
+							a(href="https://wiki.duraspace.org/display/GSOC/DSpace+ClientUI+built+on+RESTful+API+-+GSoC+2011", target="_blank") DSpace REST Client
+							ul.small
+								li Google Summer of Code 2011 project for Duraspace organization
+								li jQuery based client for DSpace REST API
+						li 
+							a(href="http://postshire.com/", target="_blank") Postshire
+							ul.small
+								li Anonymous publishing platform
+								li Fully responsive, HTML5/CSS3 powered run on Python/Django
+
+						li 
+							a(href="http://beta.orbitnote.com/", target="_blank") Orbitnote
+							ul.small
+								li Build public and private classes to spread knowledge everyday
+								li Early design in Python/Django
+
+						li 
+							a(href="http://iitbhu.ac.in/tpo/", target="_blank") TPO, IIT (BHU) Varanasi
+							ul.small
+								li Training &amp; Placement Portal
+								li Built on experimental PHP/MySQL platform
+
+						li 
+							a(href="http://iitbhu.ac.in/conferences/cse/aisc2012/", target="_blank") AISC 2012
+							ul.small
+								li Website built for AISC 2012
+								li CSS3 design with flexible PHP backend
+
+						li 
+							a(href="http://iitbhu.ac.in/events/cse/adhyayan/", target="_blank") Adhyayan 2012
+							ul.small
+								li Full web app built for Adhyayan 2012
+								li PHP/MySQL with jQuery AJAX
+
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") fees
+				p 
+					span My weekly rate is 250 USD.
+					br
+					span For starting a new project, email me at vibhaj8 [at] gmail [dot] com.
+						
+
+			div(style="margin: 1.5em 0 5em;")
+				span(style="font-size: 2em;") donate
+				p 
+					span appreciate my work using paypal
+					br
+					br
+					form(action="https://www.paypal.com/cgi-bin/webscr", method="post", target="_top")
+						input(type="hidden", name="cmd", value="_donations")
+						input(type="hidden", name="business", value="vibhaj8@gmail.com")
+						input(type="hidden", name="lc", value="IN")
+						input(type="hidden", name="no_note", value="0")
+						input(type="hidden", name="currency_code", value="USD")
+						input(type="hidden", name="bn", value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest")
+						input(type="image", src="https://www.paypalobjects.com/en_GB/i/btn/btn_donateCC_LG.gif", border="0", name="submit", alt="PayPal – The safer, easier way to pay online.")
+						img(alt="", border="0", src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width="1", height="1")
+			

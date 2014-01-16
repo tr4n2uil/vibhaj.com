@@ -1,0 +1,58 @@
+extends layout
+
+block php
+	:php
+		$breadcrumbs = array();
+		$page = 'home';
+		$menu = array(
+			'home' => '',
+			'labs' => 'labs/',
+			'hire' => 'hire/',
+			'about' => 'about/',
+		);
+
+block title
+	title #{page} &mdash; vibhaj rajan
+
+block content
+	div.body
+		div.wrap
+			div(style="padding: 1em 0 0;")
+				blockquote(style="font-size: 1.2em; font-style: italic; color: steelblue;") Do and build what people love, not what they want.
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") hello
+				p 
+					span My name is Vibhaj Rajan.
+					br
+					span I am a full-stack web technology developer/consultant.
+					br
+					span I am based in Navi Mumbai, India.
+
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") labs
+				p 
+					span I love building things open source and working on startup ideas.
+					br
+					span Explore my 
+						a(href="#{app}labs/") labs
+						|to see what I am experimenting on.
+
+			div(style="margin: 1.5em 0;")
+				span(style="font-size: 2em;") hire
+				p 
+					span I am open to consulting part-time work.
+					br
+					span 
+						a(href="#{app}hire/") Check
+						| if I am suitable.
+
+			div(style="margin: 1.5em 0 5em;")
+				span(style="font-size: 2em;") about
+				p 
+					span I am a thinker, hacker, entrepreneur, startup enthusiast, IIT graduate.
+					br
+					span Know my 
+						a(href="#{app}about/") story.
+
