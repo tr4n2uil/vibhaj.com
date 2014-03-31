@@ -1,0 +1,60 @@
+/**
+ *	Style LESS file
+ *
+ *	Vibhaj Rajan <vibhaj8@gmail.com>
+ *
+ *	Licensed under MIT License 
+ *	http://www.opensource.org/licenses/mit-license.php
+ *
+**/
+
+@import "responsive.less";
+@import "utils.less";
+
+.scroll-bar();
+
+body {
+  	font-family: 'Proxima Nova', helvetica, arial, sans-serif;
+  	margin: 0;
+  	padding: 0;
+}
+
+a {
+  	color: #00B7FF;
+  	cursor: pointer;
+}
+
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,255,255, 0.5);
+}
+
+.loading>img {
+	margin: 22% auto 0;
+	display: block;
+}
+
+.btn {
+	.border-radius;
+}
+
+.rounded {
+	.circle(1em);
+}
+
+.dim {
+	color: #999;
+}
+
+.round {
+	.border-radius(17px);
+}
+
+.no-link {
+	color: #333;
+}
+
