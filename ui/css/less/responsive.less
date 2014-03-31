@@ -12,10 +12,11 @@
 @base-mrglr: 5%;
 
 @base-wide: 60%;
+@base-wide-num: 60;
 @base-divider: 40;
 @base-partition: 30%;
 
-.auto-text(@width: 320px) when (@width <= 800px) {
+.auto-text(@width: 320px) when (@width <= 1440px) {
 
 	@media all and (max-width: (@width + 20)) and (min-width: @width){
 		@media (min-aspect-ratio:4/3){
@@ -23,32 +24,20 @@
 				width: @base-wide;
 				margin: auto;
 			}
+
+			body, input, button {
+				font-size: (@width*@base-wide-num/(100*@base-divider));
+			}
 		}
 
-		body, input, button {
-			font-size: (@width/@base-divider);
-		}
+		@media (max-aspect-ratio:4/3){
+			body, input, button {
+				font-size: (@width/@base-divider);
+			}
+		}		
 	}
 
 	.auto-text(@width + 20);
-}
-
-.auto-half-text(@width: 800px) when (@width < 1440px) {
-
-	@media all and (max-width: (@width + 20)) and (min-width: @width){
-		@media (min-aspect-ratio:4/3){
-			.body {
-				width: @base-wide;
-				margin: auto;
-			}
-		}
-
-		body, input, button {
-			font-size: (@width/(2*@base-divider));
-		}
-	}
-
-	.auto-half-text(@width + 20);
 }
 
 @media (max-aspect-ratio:4/3){

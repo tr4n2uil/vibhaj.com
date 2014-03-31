@@ -1,0 +1,16 @@
+#
+#	Default project .htaccess file (No need to modify)
+#
+#	Vibhaj Rajan <vibhaj8@gmail.com>
+#
+#	Licensed under MIT License 
+#	http://www.opensource.org/licenses/mit-license.php
+#
+
+RewriteEngine on
+
+#	allow css js img
+RewriteCond %{REQUEST_URI} !^.*\.(jpg|css|js|gif|png|html|map|eot|otf|svg|ttf|woff|min\.js)$ [NC]
+
+# 	forward everything to index.php
+RewriteRule ^(.*)$ index.html [L]

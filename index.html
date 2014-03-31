@@ -12,14 +12,14 @@
 **/
 -->
 
-<html ng-app='APP'>
+<html ng-app='APP' ng-controller='init'>
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1'>
         <meta name='apple-mobile-web-app-capable' content='yes'>
         <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
 
-        <title>{{ title?title:"home" }} &mdash; vibhaj rajan</title>
+        <title>{{ page }} &mdash; vibhaj rajan</title>
 
         <link rel="shortcut icon" href="ui/img/photo.jpg" >
         <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css">
@@ -37,13 +37,13 @@
         <script type='text/javascript' src='ui/js/app.js'></script>
     </head>
 
-    <body ng-controller='init'>
-        <div class='body'>
-            <div ng-show='loader' class='loading'>
-                <img src='ui/img/loader.gif'>
-            </div>
-        
-            <div ng-view></div>
+    <body>
+        <div ng-show='loader' class='loading'>
+            <img src='ui/img/loader.gif'>
         </div>
+    
+        <div ng-include src="headerURL"></div>
+        <div ng-view></div>
+        <div ng-include src="footerURL"></div>
     </body>
 </html>
