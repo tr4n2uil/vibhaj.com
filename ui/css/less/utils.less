@@ -1,0 +1,189 @@
+/**
+ *	Utils LESS file
+ *
+ *	Vibhaj Rajan <vibhaj8@gmail.com>
+ *
+ *	Licensed under MIT License 
+ *	http://www.opensource.org/licenses/mit-license.php
+ *
+**/
+
+.border-radius(@radius: 0px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+.circle(@size: 1em) {
+	max-height: (2 * @size);
+	max-width: (2 * @size);
+	.border-radius(@size);
+}
+
+.scroll-bar(@size: 0.36em; @color: #eee; @add: #111111){
+	::-webkit-scrollbar {
+		width: @size;
+		height: @size;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: @color;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: (@color - @add - @add);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background-color: (@color - @add);
+	}
+}
+
+.spacify(@padtb: 0.36em; @padlr: 0.86em) {
+	input, button {
+		padding: @padtb @padlr;
+	}
+}
+
+.init-editable(){
+	.editable div[contenteditable=true]:focus {
+		outline: none;
+	}
+
+	.editable section {
+		text-align: center;
+	}
+
+	.editable article {
+		font-size: 1.5em;
+	}
+
+	.editable header {
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.editable footer {
+		font-size: 1.2em;
+	}
+
+	.editable blockquote {
+		padding: 0;
+		margin: 0 0 0 3em;
+		border-left: none;
+	}
+
+	.editable aside {
+		padding: 0.5em 1em;
+		margin: 0 0 1em;
+		border-left: 5px solid #eeeeee;
+	}
+
+	.editable pre {
+		display: block;
+		padding: 0.5em 1em;
+		margin: 0 0 0.5em;
+		font-size: 0em;
+		line-height: 1.428571429;
+		word-break: break-all;
+		word-wrap: break-word;
+		color: #333333;
+		background-color: #f5f5f5;
+		border: 1px solid #cccccc;
+		border-radius: 0.29em;
+	}
+
+	.editing {
+		border: none;
+		padding: 0;
+	}
+
+	.editing:focus {
+		outline: none;
+	}
+}
+
+.init-tooltip() {
+	.tooltip-menu {
+		display: none;
+		position: absolute;
+		width: auto;
+		background-color: #333;
+		padding: 0.36em 0.86em;
+		color: #fff;
+		line-height: 1em;
+		-webkit-transition: all 1s ease-in;
+	}
+
+	.tooltip-menu a {
+		color: white;
+		text-decoration: none;
+		padding: 0.36em 0.57em;
+		display: inline-block;
+	}
+
+	.tooltip-menu .execcmd[data-done] {
+		font-weight: bold;
+		color: skyblue;
+	}
+
+}
+
+.init-autocomplete() {
+	.ui-autocomplete { 
+		border: solid 1px #CCC !important; 
+		list-style-type: none; 
+		text-align: left;
+		background-color: white !important; 
+		overflow: hidden; 
+	}
+	.ui-autocomplete a { 
+		display: inline-block; 
+		border-radius: 0 !important; 
+		-moz-border-radius: 0 !important; 
+		-webkit-border-radius: 0 !important; 
+		width: 100%; 
+	}
+
+	.ui-autocomplete-input { 
+		background: url('../images/magnifier.png') no-repeat right 8px center !important; 
+		border: solid 1px #aaa;
+	}
+	.ui-autocomplete-loading { 
+		background: url('../images/loading.gif') no-repeat right 10px center !important; 
+	}
+	.ui-helper-hidden-accessible {
+		display: none;
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.no-display {
+	display: none;
+}
+
+.progress {
+	margin-bottom: 0;
+}
+
+.percent {
+	position: absolute;
+	top: 0;
+	left: 48%;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+.fixed-bottom-done {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.clear {
+	clear: both;
+}
