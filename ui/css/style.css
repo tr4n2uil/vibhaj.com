@@ -844,10 +844,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #dddddd;
 }
-body,
-input,
-button {
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
+* {
+  font-family: 'Open Sans', helvetica, arial, sans-serif !important;
 }
 body {
   margin: 0;
