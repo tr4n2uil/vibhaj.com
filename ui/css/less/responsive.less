@@ -1,0 +1,102 @@
+/**
+ *	Responsive LESS file
+ *
+ *	Vibhaj Rajan <vibhaj8@gmail.com>
+ *
+ *	Licensed under MIT License 
+ *	http://www.opensource.org/licenses/mit-license.php
+ *
+**/
+
+@base-mrgtb: 0.8em;
+@base-mrglr: 5%;
+
+@base-wide: 60%;
+@base-divider: 40;
+@base-partition: 30%;
+
+.auto-text(@width: 320px) when (@width <= 800px) {
+
+	@media all and (max-width: (@width + 20)) and (min-width: @width){
+		@media (min-aspect-ratio:4/3){
+			.body {
+				width: @base-wide;
+				margin: auto;
+			}
+		}
+
+		body, input, button {
+			font-size: (@width/@base-divider);
+		}
+	}
+
+	.auto-text(@width + 20);
+}
+
+.auto-half-text(@width: 800px) when (@width < 1440px) {
+
+	@media all and (max-width: (@width + 20)) and (min-width: @width){
+		@media (min-aspect-ratio:4/3){
+			.body {
+				width: @base-wide;
+				margin: auto;
+			}
+		}
+
+		body, input, button {
+			font-size: (@width/(2*@base-divider));
+		}
+	}
+
+	.auto-half-text(@width + 20);
+}
+
+@media (max-aspect-ratio:4/3){
+	.body {
+		padding: 0 @base-mrglr;
+	}	
+}
+
+.body {
+	margin: auto;
+}
+
+.wrap {
+	padding: 0 15px;
+}
+
+.leaf {
+	margin: @base-mrgtb @base-mrglr;
+	vertical-align: baseline;
+	line-height: 1.25em;
+}
+
+@media all and (min-aspect-ratio: 4/3){
+	.leaf {
+		float: left;
+		text-align: right;
+		padding-right: 2em;
+		margin: @base-mrgtb auto;
+	}
+}
+
+.main, .sub {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main {
+	width: (100 - @base-partition);
+	padding-right: 1.5em;
+}
+
+.sub {
+	width: @base-partition - 5;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+}
+
+
