@@ -1,5 +1,5 @@
 /**
- *	Canvas LESS file
+ *	Responsive LESS file
  *
  *	Vibhaj Rajan <vibhaj8@gmail.com>
  *
@@ -10,8 +10,52 @@
 
 @base-mrgtb: 0.8em;
 @base-mrglr: 5%;
+
+@base-wide: 60%;
+@base-divider: 40;
 @base-partition: 30%;
 
+.auto-text(@width: 320px) when (@width <= 800px) {
+
+	@media all and (max-width: (@width + 20)) and (min-width: @width){
+		@media (min-aspect-ratio:4/3){
+			.body {
+				width: @base-wide;
+				margin: auto;
+			}
+		}
+
+		body, input, button {
+			font-size: (@width/@base-divider);
+		}
+	}
+
+	.auto-text(@width + 20);
+}
+
+.auto-half-text(@width: 800px) when (@width < 1440px) {
+
+	@media all and (max-width: (@width + 20)) and (min-width: @width){
+		@media (min-aspect-ratio:4/3){
+			.body {
+				width: @base-wide;
+				margin: auto;
+			}
+		}
+
+		body, input, button {
+			font-size: (@width/(2*@base-divider));
+		}
+	}
+
+	.auto-half-text(@width + 20);
+}
+
+@media (max-aspect-ratio:4/3){
+	.body {
+		padding: 0 @base-mrglr;
+	}	
+}
 
 .body {
 	margin: auto;

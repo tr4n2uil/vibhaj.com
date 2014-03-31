@@ -1,0 +1,909 @@
+/**
+ *	Style LESS file
+ *
+ *	Vibhaj Rajan <vibhaj8@gmail.com>
+ *
+ *	Licensed under MIT License 
+ *	http://www.opensource.org/licenses/mit-license.php
+ *
+**/
+/**
+ *	Responsive LESS file
+ *
+ *	Vibhaj Rajan <vibhaj8@gmail.com>
+ *
+ *	Licensed under MIT License 
+ *	http://www.opensource.org/licenses/mit-license.php
+ *
+**/
+@media (max-aspect-ratio: 4/3) {
+  .body {
+    padding: 0 5%;
+  }
+}
+.body {
+  margin: auto;
+}
+.wrap {
+  padding: 0 15px;
+}
+.leaf {
+  margin: 0.8em 5%;
+  vertical-align: baseline;
+  line-height: 1.25em;
+}
+@media all and (min-aspect-ratio: 4/3) {
+  .leaf {
+    float: left;
+    text-align: right;
+    padding-right: 2em;
+    margin: 0.8em auto;
+  }
+}
+.main,
+.sub {
+  display: inline-block;
+  vertical-align: top;
+}
+.main {
+  width: 70%;
+  padding-right: 1.5em;
+}
+.sub {
+  width: 25%;
+}
+body {
+  font-size: 16px;
+  min-width: 320px;
+}
+/**
+ *	Utils LESS file
+ *
+ *	Vibhaj Rajan <vibhaj8@gmail.com>
+ *
+ *	Licensed under MIT License 
+ *	http://www.opensource.org/licenses/mit-license.php
+ *
+**/
+.bold {
+  font-weight: bold;
+}
+.no-display {
+  display: none;
+}
+.progress {
+  margin-bottom: 0;
+}
+.percent {
+  position: absolute;
+  top: 0;
+  left: 48%;
+  font-weight: bold;
+  line-height: 1em;
+}
+.fixed-bottom-done {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.clear {
+  clear: both;
+}
+@media all and (max-width: 340px) and (min-width: 320px) {
+  body,
+  input,
+  button {
+    font-size: 6.4px;
+  }
+}
+@media all and (max-width: 340px) and (min-width: 320px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 360px) and (min-width: 340px) {
+  body,
+  input,
+  button {
+    font-size: 6.8px;
+  }
+}
+@media all and (max-width: 360px) and (min-width: 340px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 380px) and (min-width: 360px) {
+  body,
+  input,
+  button {
+    font-size: 7.2px;
+  }
+}
+@media all and (max-width: 380px) and (min-width: 360px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 400px) and (min-width: 380px) {
+  body,
+  input,
+  button {
+    font-size: 7.6px;
+  }
+}
+@media all and (max-width: 400px) and (min-width: 380px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 420px) and (min-width: 400px) {
+  body,
+  input,
+  button {
+    font-size: 8px;
+  }
+}
+@media all and (max-width: 420px) and (min-width: 400px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 440px) and (min-width: 420px) {
+  body,
+  input,
+  button {
+    font-size: 8.4px;
+  }
+}
+@media all and (max-width: 440px) and (min-width: 420px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 460px) and (min-width: 440px) {
+  body,
+  input,
+  button {
+    font-size: 8.8px;
+  }
+}
+@media all and (max-width: 460px) and (min-width: 440px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 480px) and (min-width: 460px) {
+  body,
+  input,
+  button {
+    font-size: 9.2px;
+  }
+}
+@media all and (max-width: 480px) and (min-width: 460px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 500px) and (min-width: 480px) {
+  body,
+  input,
+  button {
+    font-size: 9.6px;
+  }
+}
+@media all and (max-width: 500px) and (min-width: 480px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 520px) and (min-width: 500px) {
+  body,
+  input,
+  button {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 520px) and (min-width: 500px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 540px) and (min-width: 520px) {
+  body,
+  input,
+  button {
+    font-size: 10.4px;
+  }
+}
+@media all and (max-width: 540px) and (min-width: 520px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 560px) and (min-width: 540px) {
+  body,
+  input,
+  button {
+    font-size: 10.8px;
+  }
+}
+@media all and (max-width: 560px) and (min-width: 540px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 580px) and (min-width: 560px) {
+  body,
+  input,
+  button {
+    font-size: 11.2px;
+  }
+}
+@media all and (max-width: 580px) and (min-width: 560px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 600px) and (min-width: 580px) {
+  body,
+  input,
+  button {
+    font-size: 11.6px;
+  }
+}
+@media all and (max-width: 600px) and (min-width: 580px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 620px) and (min-width: 600px) {
+  body,
+  input,
+  button {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 620px) and (min-width: 600px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 640px) and (min-width: 620px) {
+  body,
+  input,
+  button {
+    font-size: 12.4px;
+  }
+}
+@media all and (max-width: 640px) and (min-width: 620px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 660px) and (min-width: 640px) {
+  body,
+  input,
+  button {
+    font-size: 12.8px;
+  }
+}
+@media all and (max-width: 660px) and (min-width: 640px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 680px) and (min-width: 660px) {
+  body,
+  input,
+  button {
+    font-size: 13.2px;
+  }
+}
+@media all and (max-width: 680px) and (min-width: 660px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 700px) and (min-width: 680px) {
+  body,
+  input,
+  button {
+    font-size: 13.6px;
+  }
+}
+@media all and (max-width: 700px) and (min-width: 680px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 720px) and (min-width: 700px) {
+  body,
+  input,
+  button {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 720px) and (min-width: 700px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 740px) and (min-width: 720px) {
+  body,
+  input,
+  button {
+    font-size: 14.4px;
+  }
+}
+@media all and (max-width: 740px) and (min-width: 720px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 760px) and (min-width: 740px) {
+  body,
+  input,
+  button {
+    font-size: 14.8px;
+  }
+}
+@media all and (max-width: 760px) and (min-width: 740px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 780px) and (min-width: 760px) {
+  body,
+  input,
+  button {
+    font-size: 15.2px;
+  }
+}
+@media all and (max-width: 780px) and (min-width: 760px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 800px) and (min-width: 780px) {
+  body,
+  input,
+  button {
+    font-size: 15.6px;
+  }
+}
+@media all and (max-width: 800px) and (min-width: 780px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 820px) and (min-width: 800px) {
+  body,
+  input,
+  button {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 820px) and (min-width: 800px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 820px) and (min-width: 800px) {
+  body,
+  input,
+  button {
+    font-size: 8px;
+  }
+}
+@media all and (max-width: 820px) and (min-width: 800px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 840px) and (min-width: 820px) {
+  body,
+  input,
+  button {
+    font-size: 8.2px;
+  }
+}
+@media all and (max-width: 840px) and (min-width: 820px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 860px) and (min-width: 840px) {
+  body,
+  input,
+  button {
+    font-size: 8.4px;
+  }
+}
+@media all and (max-width: 860px) and (min-width: 840px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 880px) and (min-width: 860px) {
+  body,
+  input,
+  button {
+    font-size: 8.6px;
+  }
+}
+@media all and (max-width: 880px) and (min-width: 860px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 900px) and (min-width: 880px) {
+  body,
+  input,
+  button {
+    font-size: 8.8px;
+  }
+}
+@media all and (max-width: 900px) and (min-width: 880px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 920px) and (min-width: 900px) {
+  body,
+  input,
+  button {
+    font-size: 9px;
+  }
+}
+@media all and (max-width: 920px) and (min-width: 900px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 940px) and (min-width: 920px) {
+  body,
+  input,
+  button {
+    font-size: 9.2px;
+  }
+}
+@media all and (max-width: 940px) and (min-width: 920px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 960px) and (min-width: 940px) {
+  body,
+  input,
+  button {
+    font-size: 9.4px;
+  }
+}
+@media all and (max-width: 960px) and (min-width: 940px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 980px) and (min-width: 960px) {
+  body,
+  input,
+  button {
+    font-size: 9.6px;
+  }
+}
+@media all and (max-width: 980px) and (min-width: 960px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1000px) and (min-width: 980px) {
+  body,
+  input,
+  button {
+    font-size: 9.8px;
+  }
+}
+@media all and (max-width: 1000px) and (min-width: 980px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1020px) and (min-width: 1000px) {
+  body,
+  input,
+  button {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 1020px) and (min-width: 1000px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1040px) and (min-width: 1020px) {
+  body,
+  input,
+  button {
+    font-size: 10.2px;
+  }
+}
+@media all and (max-width: 1040px) and (min-width: 1020px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1060px) and (min-width: 1040px) {
+  body,
+  input,
+  button {
+    font-size: 10.4px;
+  }
+}
+@media all and (max-width: 1060px) and (min-width: 1040px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1080px) and (min-width: 1060px) {
+  body,
+  input,
+  button {
+    font-size: 10.6px;
+  }
+}
+@media all and (max-width: 1080px) and (min-width: 1060px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 1080px) {
+  body,
+  input,
+  button {
+    font-size: 10.8px;
+  }
+}
+@media all and (max-width: 1100px) and (min-width: 1080px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1120px) and (min-width: 1100px) {
+  body,
+  input,
+  button {
+    font-size: 11px;
+  }
+}
+@media all and (max-width: 1120px) and (min-width: 1100px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1140px) and (min-width: 1120px) {
+  body,
+  input,
+  button {
+    font-size: 11.2px;
+  }
+}
+@media all and (max-width: 1140px) and (min-width: 1120px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1160px) and (min-width: 1140px) {
+  body,
+  input,
+  button {
+    font-size: 11.4px;
+  }
+}
+@media all and (max-width: 1160px) and (min-width: 1140px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1180px) and (min-width: 1160px) {
+  body,
+  input,
+  button {
+    font-size: 11.6px;
+  }
+}
+@media all and (max-width: 1180px) and (min-width: 1160px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1200px) and (min-width: 1180px) {
+  body,
+  input,
+  button {
+    font-size: 11.8px;
+  }
+}
+@media all and (max-width: 1200px) and (min-width: 1180px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1220px) and (min-width: 1200px) {
+  body,
+  input,
+  button {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 1220px) and (min-width: 1200px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1240px) and (min-width: 1220px) {
+  body,
+  input,
+  button {
+    font-size: 12.2px;
+  }
+}
+@media all and (max-width: 1240px) and (min-width: 1220px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1260px) and (min-width: 1240px) {
+  body,
+  input,
+  button {
+    font-size: 12.4px;
+  }
+}
+@media all and (max-width: 1260px) and (min-width: 1240px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1280px) and (min-width: 1260px) {
+  body,
+  input,
+  button {
+    font-size: 12.6px;
+  }
+}
+@media all and (max-width: 1280px) and (min-width: 1260px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1300px) and (min-width: 1280px) {
+  body,
+  input,
+  button {
+    font-size: 12.8px;
+  }
+}
+@media all and (max-width: 1300px) and (min-width: 1280px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1320px) and (min-width: 1300px) {
+  body,
+  input,
+  button {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 1320px) and (min-width: 1300px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1340px) and (min-width: 1320px) {
+  body,
+  input,
+  button {
+    font-size: 13.2px;
+  }
+}
+@media all and (max-width: 1340px) and (min-width: 1320px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1360px) and (min-width: 1340px) {
+  body,
+  input,
+  button {
+    font-size: 13.4px;
+  }
+}
+@media all and (max-width: 1360px) and (min-width: 1340px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1380px) and (min-width: 1360px) {
+  body,
+  input,
+  button {
+    font-size: 13.6px;
+  }
+}
+@media all and (max-width: 1380px) and (min-width: 1360px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1400px) and (min-width: 1380px) {
+  body,
+  input,
+  button {
+    font-size: 13.8px;
+  }
+}
+@media all and (max-width: 1400px) and (min-width: 1380px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1420px) and (min-width: 1400px) {
+  body,
+  input,
+  button {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 1420px) and (min-width: 1400px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media all and (max-width: 1440px) and (min-width: 1420px) {
+  body,
+  input,
+  button {
+    font-size: 14.2px;
+  }
+}
+@media all and (max-width: 1440px) and (min-width: 1420px) and (min-aspect-ratio: 4/3) {
+  .body {
+    width: 60%;
+    margin: auto;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.36em;
+  height: 0.36em;
+}
+::-webkit-scrollbar-track {
+  background-color: #eeeeee;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dddddd;
+}
+body,
+input,
+button {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #00B7FF;
+  cursor: pointer;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+.loading > img {
+  margin: 22% auto 0;
+  display: block;
+}
+.btn {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+.rounded {
+  max-height: 2em;
+  max-width: 2em;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+}
+.dim {
+  color: #999;
+}
+.round {
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+}
+.no-link {
+  color: #333;
+}
+.h1 {
+  font-size: 2em;
+  margin: 0.5em 0 0.25em;
+}
+.h2 {
+  font-size: 1.5em;
+  margin: 0.35em 0 0.15em;
+}
+.h3 {
+  font-size: 1.3em;
+  margin: 0.25em 0 0.05em;
+}
+.h4 {
+  font-size: 1.1em;
+}
