@@ -1,5 +1,5 @@
 <div class="header">
-	<div style="font-variant: small-caps; font-size: 0.9em; font-weight: bold; background-color: #efefef; border-bottom: solid 1px #ccc; padding: 0.3em 0;">
+	<div class="caps-strip">
 		<div class="body">
 			<div class="wrap">
 				<span>vibhaj rajan</span>
@@ -7,21 +7,21 @@
 		</div>
 	</div>
 
-	<div class="body" style="font-size: 3em;">
+	<div class="body main-title">
 		<div class="wrap">
 			<span>{{ page }}</span>
 			<span class="pull-right">
-				<img src="ui/img/photo.jpg" style="height: 1em; margin-bottom: 0.35em;" />
+				<img src="ui/img/photo.jpg" class="square-photo" />
 			</span>
 			<span class="clearfix"></span>
 		</div>
 	</div>
 
-	<div style="font-size: 1.2em; color: #999;">
+	<div class="text-menu">
 		<div class="body">
 			<div class="wrap">
 				<ul class="list-inline">
-					<li ng-repeat="name in menu" style="padding-right: 1em;" ng-class="{bold:name==page}">
+					<li ng-repeat="name in menu" ng-class="{bold:name==page}">
 						<a href="#/{{menu_urls[name]}}">{{name}}</a>
 					</li>
 				</ul>
