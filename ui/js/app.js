@@ -1,4 +1,4 @@
-var APP = angular.module('APP', ['ngRoute', 'ngSanitize'])
+var APP = angular.module('APP', ['ngRoute', 'ngSanitize', 'chieffancypants.loadingBar'])
 
 	.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider){
 
